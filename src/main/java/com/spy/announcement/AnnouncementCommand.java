@@ -45,7 +45,7 @@ public class AnnouncementCommand implements CommandExecutor {
             int g = (int) (startG + (endG - startG) * ratio);
             int b = (int) (startB + (endB - startB) * ratio);
             String hex = String.format("#%02X%02X%02X", r, g, b);
-            result.append(ChatColor.of(hex)).append(ChatColor.BOLD).append(text.charAt(i));
+            result.append(net.md_5.bungee.api.ChatColor.of(hex)).append(ChatColor.BOLD).append(text.charAt(i));
         }
 
         return result.toString();
